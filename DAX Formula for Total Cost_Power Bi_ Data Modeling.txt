@@ -1,0 +1,7 @@
+Formula for Total Cost
+
+First type the DAX of the (other table) and then close out with the (orginal table). 
+
+= SUMX(Table, Table[Column] * RELATED(Table[Column]))
+
+Total Cost = SUMX('Consolidation-Pipettes_2023','Consolidation-Pipettes_2023'[Units] * RELATED(Price_Amt_USD[Price_Amt_USD]))
